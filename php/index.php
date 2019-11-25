@@ -1,13 +1,12 @@
+<!DOCTYPE html>
 <html>
-<head>
-	<title>Test PHP passed</title>
-</head>
 <body>
-<h1>PHP S2I on OpenShift</h1>
-<p>
-<?php
-	phpinfo();
-?>
-</p>
+
+<form action="upload.php" method="post" enctype="multipart/form-data">
+    Select image to upload:
+    <input type="file" name="fileToUpload" id="fileToUpload">
+    <input type="submit" value="Upload Image" name="submit">
+</form>
+
 </body>
 </html>
